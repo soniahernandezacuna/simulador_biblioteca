@@ -37,21 +37,20 @@
   </ul>
 
   <script>
-    // Lista manual de archivos en el root (GitHub Pages no permite leer directorios automáticamente)
+    // Lista manual de archivos en el root
     const files = [
       "simulador.html",
       "diccionario_extenso.js",
-      "index.html"
-      // agrega aquí cualquier otro archivo que tengas
+      "index.html",
+      "Simulador%20de%20B%C3%BAsqueda%20Ejercicio%20Mod3.html"
     ];
 
     const fileList = document.getElementById('fileList');
     files.forEach(file => {
       const li = document.createElement('li');
-      li.innerHTML = `<a href="${file}" target="_blank">${file}</a>`;
+      li.innerHTML = `<a href="${file}" target="_blank">${decodeURIComponent(file)}</a>`;
       fileList.appendChild(li);
     });
   </script>
 
-</body>
-</html>
+<
