@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Simulador de Estrategias de Búsqueda</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f5f5f5; margin:0; padding:0; }
+    header { background: #003366; color:white; padding: 12px 20px; }
+    h1 { margin:0; font-size:20px; }
+    .container { max-width: 800px; margin: 30px auto; background:white; padding:20px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+    label { font-weight:bold; display:block; margin-top:15px; }
+    input[type="text"] { width:100%; padding:10px; border:1px solid #ccc; border-radius:4px; font-size:16px; }
+    button { margin-top:16px; padding:10px 16px; background:#003366; color:white; border:none; border-radius:4px; cursor:pointer; font-size:16px; }
+    button:hover { background:#00509e; }
+    .results { margin-top:24px; }
+    .feedback { background:#eef6ff; border-left:4px solid #003366; padding:10px; margin-top:10px; border-radius:4px; }
+    .suggestions { background:#f9f9f9; border:1px dashed #aaa; padding:10px; margin-top:10px; border-radius:4px; }
+    #newStrategyBtn { display:none; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Simulador de Estrategias de Búsqueda</h1>
+  </header>
+  <div class="container">
+    <label for="ideaBox">1. Escribe tu idea central:</label>
+    <input type="text" id="ideaBox" placeholder="Ej. influencia del arte en la danza y la música en el teatro y la escultura">
+
+    <label for="searchBox">2. Escribe tu estrategia de búsqueda (usa AND, OR, NOT o comillas para frases):</label>
+    <input type="text" id="searchBox" placeholder='Ej. "arte moderno" AND danza NOT pintura'>
+
+    <button onclick="analyzeSearch()">Probar Estrategia</button>
+    <button id="newStrategyBtn" onclick="newStrategy()">Limpiar búsqueda</button>
+
+    <div id="results" class="results"></div>
+  </div>
+
+  <script src="https://soniahernandezacuna.github.io/simulador_biblioteca/diccionario_extenso.js"></script>
+
+  <script>
+    const booleanOperators = ["AND","OR","NOT"];
+
+    function extractTerms(text){
+      const words = text.toLowerCase().split(/[\s,.;:¡!¿?]+/);
+      const found = [];
+      for(const key in dictionary){
+        if(words.includes(key.toLowerCase()) && !found.includes(key)){
+          found.push(key);
+        }
+      }
+      return found;
+    }
+
+    // Función mejorada para detectar todas las palabras consecutivas sin operador
+    function checkMissingOperators(query) {
+      const tokens = query.match(/"[^"]*"|\S+/g) || [];
+      let message = "";
+      for(let i=0; i<tokens.length-1; i++){
+        const current = tokens[i];
+        const next = tokens[i+1];
+
+        // Si ambos tokens no son operadores
+        if(!booleanOperators.includes(current.toUpperCase()) && 
+           !booleanOperators.includes(next.toUpperCase())) {
+          message += `⚠️ Detectamos que "${current}" y "${next}" están consecutivos sin operador booleano. Considera usar AND u OR si es necesario.<br>`;
+        }
+      }
+      return message;
+    }
+
+    function analyzeSearch(){
+      if(typeof dictionary === "undefined"){
+        alert("El diccionario no está cargado. Revisa que 'diccionario_extenso.js' esté en la misma carpeta.");
+        return;
+      }
+
+      const idea = document.getElementById('ideaBox').value.trim();
+      const query = document.getElementById('searchBox').value.trim();
+      const resultsDiv = document.getElementById('results');
+      resultsDiv.innerHTML = "<h3>Tu Estrategia de Búsqueda:</h3>";
+
+      if(!idea){ resultsDiv.innerHTML+="<p>⚠️ Primero escribe tu idea central.</p>"; return; }
+      if(!query){ resultsDiv.innerHTML+="<p>⚠️ Ingresa una estrategia de búsqueda con AND, OR, NOT o comillas.</p>"; return; }
+
+      resultsDiv.innerHTML+=`<p><strong>Idea central:</strong> ${idea}</p>`;
+      resultsDiv.innerHTML+=`<p><strong>Estrategia:</strong> ${query}</p>`;
+
+      let feedback="";
+      booleanOperators.forEach(op=>{
+        const regexUpper=new RegExp(`\\b${op}\\b`,'g');
+        const regexLower=new RegExp(`\\b${op.toLowerCase()}\\b`,'g');
+        if(regexUpper.test(query)) feedback+=`✔️ Usaste <strong>${op}</strong> correctamente.<br>`;
+        if(regexLower.test(query)) feedback+=`⚠️ Operador <strong>${op}</strong> debe estar en mayúsculas.<br>`;
+      });
+      if(/".*"/.test(query)) feedback+=`✔️ Usaste <strong>comillas</strong> para frases exactas.<br>`;
+
+      // Se agrega la retroalimentación de todas las palabras consecutivas sin operador
+      feedback += checkMissingOperators(query);
+
+      if(!feedback) feedback="⚠️ No se detectaron operadores booleanos ni comillas.";
+
+      const terms = extractTerms(idea);
+      let suggestions = [];
+      terms.forEach(t=>{
+        const syns = dictionary[t].synonyms.join(", ");
+        const broader = dictionary[t].broader.join(", ");
+        const narrower = dictionary[t].narrower.join(", ");
+        suggestions.push(`${t}: Sinónimos(${syns}), Generales(${broader}), Próximos(${narrower})`);
+      });
+
+      resultsDiv.innerHTML+=`<div class="feedback"><strong>Retroalimentación:</strong><br>${feedback}</div>`;
+      if(suggestions.length>0){
+        resultsDiv.innerHTML+=`<div class="suggestions"><strong>Sugerencias para mejorar tu búsqueda:</strong><ul>${suggestions.map(s=>`<li>${s}</li>`).join('')}</ul></div>`;
+      }
+
+      document.getElementById('newStrategyBtn').style.display = 'inline-block';
+    }
+
+    function newStrategy(){
+      document.getElementById('ideaBox').value = "";
+      document.getElementById('searchBox').value = "";
+      document.getElementById('results').innerHTML = "";
+      document.getElementById('newStrategyBtn').style.display = 'none';
+      document.getElementById('ideaBox').focus();
+    }
+  </script>
+</body>
+</html>
