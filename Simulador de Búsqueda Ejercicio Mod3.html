@@ -50,22 +50,27 @@
       }
       return found;
     }
-
     // Función mejorada para detectar todas las palabras consecutivas sin operador
-    function checkMissingOperators(query) {
-      const tokens = query.match(/"[^"]*"|\S+/g) || [];
-      let message = "";
-      for(let i=0; i<tokens.length-1; i++){
-        const current = tokens[i];
-        const next = tokens[i+1];
+ function checkMissingOperators(query) {
+  // Tokeniza respetando frases entre comillas y paréntesis
+  const tokens = query.match(/"[^"]*"|\(|\)|\bAND\b|\bOR\b|\bNOT\b|[^\s()]+/gi) || [];
+  let message = "";
 
-        // Si ambos tokens no son operadores
-        if(!booleanOperators.includes(current.toUpperCase()) && 
-           !booleanOperators.includes(next.toUpperCase())) {
-          message += `⚠️ Detectamos que "${current}" y "${next}" están consecutivos sin operador booleano. Considera usar AND u OR si es necesario.<br>`;
-        }
-      }
-      return message;
+  for (let i = 0; i < tokens.length - 1; i++) {
+    const current = tokens[i].trim();
+    const next = tokens[i + 1].trim();
+
+    // Saltar operadores y paréntesis
+    if (["(", ")", ...booleanOperators].includes(current.toUpperCase()) ||
+        [")", "(", ...booleanOperators].includes(next.toUpperCase())) {
+      continue;
+    }
+
+    // Si ambos no son operadores ni paréntesis → posible falta de operador
+    message += `⚠️ Detectamos que "${current}" y "${next}" están consecutivos sin operador booleano. Considera usar AND u OR si es necesario.<br>`;
+  }
+
+  return message;
     }
 
     function analyzeSearch(){
@@ -126,3 +131,4 @@
   </script>
 </body>
 </html>
+
