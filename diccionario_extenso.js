@@ -18,13 +18,43 @@ const dictionary = {
       "fusión sonora urbana"
     ]
   },
-
+  "cultura": {
+   synonyms: ["educación", "ilustración", "sabiduría"],
+    broader: ["sociedad", "civilización", "vida social", "patrimonio","antropología", "sociología", "humanidades"],
+    narrower: ["costumbres", "tradiciones", "rituales", "creencias", "lengua", "mitologías", "identidad ", "artesanías", "folclor"]
+  },
+  "cultural":  {
+ synonyms: ["educativo", "formativo", "pedagógico", "didáctico"],
+ broader: ["patrimonio cultural", "identidad colectiva", "diversidad artística", "política cultural"],
+ narrower: ["artístico", "patrimonial", "folclórico", "tradicional", "ritual", "lingüístico", "musical",
+            "gastronómico", "visual", "literario"],
+  },
+  "culturales":  {
+ synonyms: ["educativos", "formativos", "pedagógicos", "didácticos"],
+ broader: ["patrimonios culturales", "identidades colectivas", "diversidades artísticas", "políticas culturales"],
+ narrower: ["proyectos comunitarios","difusión artística","actividades educativas","mediación cultural", "folclores", "tradicionales", "rituales"],
+  },
+  
   "composición": {
     synonyms: ["creación", "estructura"],
-    broader: ["música", "arte"],
-    narrower: ["composición musical", "composición experimental"]
-  },
-
+    broader: ["música", "arte", "creación musical", "estructura sonora", "arte sonoro", "producción artística"],
+    narrower: ["composición musical", "composición experimental", "composición orquestal mexicana",
+               "composición contemporánea","estructuras musicales modernas","creación de partituras","procesos compositivos"]
+ },
+"digital": {
+    synonyms: ["medio no analógico", "electrónico", "en línea", "virtual"],
+    broader: ["tecnología", "ciberespacio", "internet", "TIC's"],
+    narrower: ["documento en línea", "recurso electrónico", "nube", "ebook",
+               "sitio web", "website", "streaming", "interactivo", "repositorio", "realidad aumentada", "VR", "multimedia"]
+ },
+ 
+"digitales": {
+    synonyms: ["medios no analógicos", "electrónicos", "en línea", "virtuales"],
+    broader: ["sociedades virtuales", "nuevos medios", "tecnologías de información", "comunicación electrónica"],
+    narrower: ["colecciones en línea", "recursos electrónicos", "repositorios", "websites", "interactivos",
+               "realidad aumentada", "VR", "multimedia"]
+ },
+  
   "mexicana": {
     synonyms: ["nacional", "tradicional"],
     broader: ["México", "identidad cultural"],
@@ -56,19 +86,14 @@ const dictionary = {
 
   "danza": {
     synonyms: ["baile", "coreografía"],
-    broader: ["arte escénico"],
-    narrower: [
-      "ballet",
-      "danza contemporánea",
-      "danza mexicana",
-      "improvisación escénica"
-    ]
+    broader: ["artes escénicas", "cultura corporal", "educación artística", "performatividad"],
+    narrower: ["ballet" , "coreografía interdisciplinaria","bailarines","tecno-danza"]
   },
 
   "danza contemporánea": {
     synonyms: ["baile moderno", "coreografía actual"],
-    broader: ["danza", "arte contemporáneo"],
-    narrower: ["danza interdisciplinaria", "improvisación escénica"]
+    broader: ["danza", "baile", "coreografía", "expresión corporal", "artes del movimiento"],
+    narrower: ["lenguaje corporal", "improvisación escénica", "exploración kinestética"]
   },
 
   "improvisación": {
@@ -83,10 +108,10 @@ const dictionary = {
     narrower: ["tradición sinfónica mexicana", "archivo histórico sonoro"]
   },
 
-  "Directores": {
+  "directores": {
     synonyms: ["realizadores", "conductores"],
-    broader: ["música", "cine", "teatro"],
-    narrower: ["directores de orquesta", "directores de escena"]
+    broader: ["profesionales del arte", "líderes escénicos", "creadores culturales", "productores artísticos"],
+    narrower: ["conductor de orquesta", "cineasta", "coordinadores creativos"]
   },
 
   "orquesta": {
@@ -144,13 +169,9 @@ const dictionary = {
 
   "diseño": {
     synonyms: ["creación", "conceptualización", "proyecto", "planificación"],
-    broader: ["arte aplicado", "innovación"],
-    narrower: [
-      "diseño escenográfico",
-      "diseño gráfico",
-      "diseño industrial",
-      "diseño de producto"
-    ]
+    broader: ["artes aplicadas", "producción cultural", "conceptualización", "estudios planificados"],
+    narrower: ["ilustración", "tipografía", "composición visual", "maquetación",
+                "identidad visual", "gráfica aplicada", "imaginería", "ambientación visual"]
   },
 
   "experimentación": {
@@ -216,14 +237,9 @@ const dictionary = {
   },
 
   "cultura": {
-    synonyms: ["civilización", "patrimonio colectivo", "identidad cultural"],
-    broader: ["sociedad"],
-    narrower: [
-      "cultura mexicana",
-      "cultura visual",
-      "cultura digital",
-      "patrimonio cultural"
-    ]
+    synonyms: ["educación", "ilustración", "sabiduría"],
+    broader: ["sociedad", "civilización", "vida social", "patrimonio","antropología", "sociología", "humanidades"],
+    narrower: ["costumbres", "tradiciones", "rituales", "creencias", "lengua", "mitologías", "identidad ", "artesanías", "folclor"]
   },
 
   "patrimonio": {
@@ -268,14 +284,10 @@ const dictionary = {
   },
 
   "enseñanza": {
-    synonyms: ["educación", "formación"],
-    broader: ["pedagogía", "cultura educativa"],
-    narrower: [
-      "educación artística",
-      "formación de músicos",
-      "didáctica del arte",
-      "programas culturales educativos"
-    ]
+    synonyms: ["instrucción", "formación", "capacitación", "adiestramiento"],
+    broader: ["educación", "pedagogía", "cultura educativa"],
+    narrower: ["tutoría", "mediación pedagógica", "demostración pedagógica", 
+               "orientación académica", "clase", "formación en línea", "capacitación docente"]
   },
 
   "educación": {
@@ -473,12 +485,9 @@ const dictionary = {
 
   "creación": {
     synonyms: ["innovación", "producción"],
-    broader: ["arte", "tecnología", "investigación"],
-    narrower: [
-      "creación artística",
-      "creación contenidos culturales",
-      "creación digital"
-    ]
+    broader: ["arte", "tecnología", "investigación","procesos creativos", "producción artística", "innovación cultural", "práctica artística"],
+    narrower: ["proyectos artísticos interdisciplinarios","laboratorios creativos","arte colaborativo","innovación artística mexicana",
+               "creación artística", "creación digital"]
   },
 
   "laboratorio": {
@@ -608,8 +617,8 @@ const dictionary = {
 
   "contemporánea": {
     synonyms: ["moderna", "actual"],
-    broader: ["arte", "cultura"],
-    narrower: ["arte contemporáneo", "danza contemporánea"]
+    broader: ["arte", "cultura", "actual", "posmodernidad"],
+    narrower: ["prácticas artísticas recientes", "posmoderna", "vanguardia", "actual", "moderna tardía"]
   },
 
   "siglo xx": {
@@ -755,5 +764,6 @@ const dictionary = {
   }
 
 };
+
 
 
