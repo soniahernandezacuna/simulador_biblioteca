@@ -266,8 +266,8 @@ const dictionary = {
     ]
   },
 
-  "arte perspectiva de género": {
-    synonyms: ["expresión con enfoque de género", "arte feminista"],
+  "género": {
+    synonyms: ["enfoque de género", "arte feminista"],
     broader: ["arte", "estudios de género"],
     narrower: [
       "arte feminista latinoamericano",
@@ -322,12 +322,6 @@ const dictionary = {
     synonyms: ["producción artística", "desarrollo cultural"],
     broader: ["cultura", "gestión cultural"],
     narrower: ["curaduría temática", "programación cultural"]
-  },
-
-  "creación contenidos culturales": {
-    synonyms: ["producción artística", "desarrollo cultural"],
-    broader: ["creación", "cultura digital"],
-    narrower: ["curaduría de contenido", "difusión cultural"]
   },
 
   "tradición": {
@@ -693,7 +687,7 @@ const dictionary = {
     ]
   },
 
-  "creación contenidos culturales": {
+  "contenidos culturales": {
     synonyms: ["producción artística", "desarrollo cultural"],
     broader: ["creación", "cultura digital"],
     narrower: ["curaduría de contenido", "difusión cultural"]
@@ -775,3 +769,4 @@ const dictionary = {
   }
 
 };
+
