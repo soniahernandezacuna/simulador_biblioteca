@@ -1,18 +1,9 @@
 const dictionary = {
   "arte": {
     synonyms: ["expresión", "creatividad", "bellas artes", "expresión artística"],
-    broader: ["cultura"],
-    narrower: [
-      "pintura",
-      "escultura",
-      "teatro",
-      "música",
-      "danza",
-      "cine",
-      "fotografía",
-      "arte feminista",
-      "arte digital"
-    ]
+    broader: ["humanidades", "estudios culturales", "expresión creativa", "cultura visual"],
+    narrower: ["pintura", "escultura", "teatro", "música", "danza",  "cine", 
+               "fotografía", "arte feminista", "arte digital", "arte ecológico y reciclado","instalaciones interactivas","arte urbano mexicano"]
   },
 
   "música": {
@@ -135,14 +126,9 @@ const dictionary = {
 
   "cine": {
     synonyms: ["filmografía", "películas", "industria cinematográfica"],
-    broader: ["arte audiovisual", "cultura visual"],
-    narrower: [
-      "cine clásico",
-      "cine contemporáneo",
-      "cine mexicano",
-      "cine independiente",
-      "nuevos directores emergentes"
-    ]
+    broader: ["audiovisual", "medios de comunicación", "industrias creativas", "cultura visual"],
+    narrower: ["cine clásico", "cine contemporáneo", "cine mexicano",   "cine independiente",
+               "plataformas de streaming nacionales","producción audiovisual digital","narrativas postmodernas mexicanas","nuevos directores emergentes"]
   },
 
   "pintura": {
@@ -769,4 +755,5 @@ const dictionary = {
   }
 
 };
+
 
