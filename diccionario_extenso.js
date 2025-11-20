@@ -441,12 +441,17 @@ const dictionary = {
     broader: ["filosofía", "espiritualidad", "religión"],
     narrower: ["ser humano", "persona", "aliento", "espíritu", "individuo"]
   },
-
+ "virtual": {
+    synonyms: ["digital","electrónico", "en línea"],
+    broader: ["tecnología", "ciberespacio", "internet", "TIC's"],
+    narrower: ["documento en línea", "recurso electrónico", "nube", "ebook",
+               "sitio web", "website", "streaming", "interactivo", "repositorio", "realidad aumentada", "VR", "multimedia"]
  "visual": {
     synonyms: ["pictórico", "gráfico", "imagen", "ilustración", "iconográfico"],
     broader: ["arte", "expresión gráfica", "óptica", "medios e imagen"],
     narrower: ["grabado", "imagen en movimiento", "film", "ilustración", "fotografía", "infografía", "figura", "representación"]   
 };
+
 
 
 
