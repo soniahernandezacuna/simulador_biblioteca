@@ -39,13 +39,13 @@ const dictionary = {
     synonyms: ["filmografía", "películas", "industria cinematográfica"],
     broader: ["audiovisual", "medios de comunicación", "industrias creativas", "cultura visual"],
     narrower: ["cine clásico", "cine contemporáneo", "cine mexicano",   "cine independiente",
-               "plataformas de streaming nacionales","producción audiovisual digital","narrativas postmodernas mexicanas","nuevos directores emergentes"]
+               "plataformas de streaming nacionales", "producción audiovisual digital", "narrativas postmodernas mexicanas", "nuevos directores emergentes"]
   },
     "composición": {
     synonyms: ["creación", "estructura"],
     broader: ["música", "arte", "creación musical", "estructura sonora", "arte sonoro", "producción artística"],
     narrower: ["composición musical", "composición experimental", "composición orquestal mexicana",
-               "composición contemporánea","estructuras musicales modernas","creación de partituras","procesos compositivos"]
+               "composición contemporánea", "estructuras musicales modernas", "creación de partituras", "procesos compositivos"]
  },
  "comunidad": {
     synonyms: ["colectivo", "grupo", "congregación"],
@@ -76,7 +76,7 @@ const dictionary = {
 "creación": {
     synonyms: ["innovación", "producción"],
     broader: ["arte", "tecnología", "investigación","procesos creativos", "producción artística", "innovación cultural", "práctica artística"],
-    narrower: ["proyectos artísticos interdisciplinarios","laboratorios creativos","arte colaborativo","innovación artística mexicana",
+    narrower: ["proyectos artísticos interdisciplinarios", "laboratorios creativos","arte colaborativo","innovación artística mexicana",
                "creación artística", "creación digital"]
   },
 "crear": {
@@ -98,7 +98,7 @@ const dictionary = {
   "culturales":  {
  synonyms: ["educativos", "formativos", "pedagógicos", "didácticos"],
  broader: ["patrimonios culturales", "identidades colectivas", "diversidades artísticas", "políticas culturales"],
- narrower: ["proyectos comunitarios","difusión artística","actividades educativas","mediación cultural", "folclores", "tradicionales", "rituales"]
+ narrower: ["proyectos comunitarios", "difusión artística","actividades educativas", "mediación cultural", "folclores", "tradicionales", "rituales"]
   },
   "danza": {
     synonyms: ["baile", "coreografía"],
@@ -301,7 +301,7 @@ const dictionary = {
   },
 "museos": {
     synonyms: ["salas de exposición", "galerías"],
-    broader: ["turismo", "instituciones culturales", "arte", centros de cultura"],
+    broader: ["turismo", "instituciones culturales", "arte", "centros de cultura"],
     narrower: ["colecciones artísticas", "patrimonio colectivo", "exposiciones temporales", "conservación", "historia", "objetos de arte"]
   },
  "música": {
@@ -452,6 +452,7 @@ const dictionary = {
     narrower: ["grabado", "imagen en movimiento", "film", "ilustración", "fotografía", "infografía", "figura", "representación"]  
 },
 };
+
 
 
 
