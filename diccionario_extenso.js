@@ -87,7 +87,7 @@ const dictionary = {
   "cultura": {
     synonyms: ["educación", "ilustración", "sabiduría"],
     broader: ["sociedad", "civilización", "vida social", "patrimonio","antropología", "sociología", "humanidades"],
-    narrower: ["costumbres", "tradiciones", "rituales", "creencias", "lengua", "mitologías", "identidad ", "artesanías", "folclor"]
+    narrower: ["costumbres", "tradiciones", "rituales", "creencias", "lengua", "mitologías", "identidad", "artesanías", "folclor"]
   },
     "cultural":  {
  synonyms: ["artístico", "patrimonial", "simbólico"],
@@ -433,7 +433,7 @@ const dictionary = {
   "verdad": {
     synonyms: ["certeza", "afirmación", "confirmación", "aseveración"],
     broader: ["moral", "ética", "filosofía"],
-    narrower: ["evidencia", "testimonio", "hechos", "representación"],
+    narrower: ["evidencia", "testimonio", "hechos", "representación"]
   },
   "vida": {
     synonyms: ["existencia", "ser", "vivir"],
@@ -442,7 +442,7 @@ const dictionary = {
   },
  "virtual": {
     synonyms: ["digital","electrónico", "en línea"],
-    broader: ["tecnología", "ciberespacio", "internet", "TIC's"],
+    broader: ["tecnología", "ciberespacio", "internet", "TICs"],
     narrower: ["documento en línea", "recurso electrónico", "nube", "ebook",
                "sitio web", "website", "streaming", "interactivo", "repositorio", "realidad aumentada", "VR", "multimedia"]
  },
@@ -452,6 +452,7 @@ const dictionary = {
     narrower: ["grabado", "imagen en movimiento", "film", "ilustración", "fotografía", "infografía", "figura", "representación"]  
 },
 };
+
 
 
 
