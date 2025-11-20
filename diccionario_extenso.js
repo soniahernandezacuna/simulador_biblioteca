@@ -113,7 +113,7 @@ const dictionary = {
   },
 "digital": {
     synonyms: ["medio no analógico", "electrónico", "en línea", "virtual"],
-    broader: ["tecnología", "ciberespacio", "internet", "TIC's"],
+    broader: ["tecnología", "ciberespacio", "internet", "TICs"],
     narrower: ["documento en línea", "recurso electrónico", "nube", "ebook",
                "sitio web", "website", "streaming", "interactivo", "repositorio", "realidad aumentada", "VR", "multimedia"]
  },
@@ -229,8 +229,8 @@ const dictionary = {
   "innovación": {
     synonyms: ["novedad", "mejora", "creación"],
     broader: ["desarrollo", "tecnología"],
-    narrower: ["innovación": ["desarrollo tecnológico", "avances científicos", "mejora educativa", "transformación social",
-"prácticas artísticas emergentes", "cambio organizacional", "progreso empresarial", "creatividad aplicada"]
+    narrower: ["avances científicos", "mejora educativa", "transformación social", "prácticas artísticas emergentes",
+               "cambio organizacional", "progreso empresarial", "creatividad aplicada"]
   },
   "inteligencia artificial": {
     synonyms: ["IA", "aprendizaje automático", "machine learning"],
@@ -264,8 +264,8 @@ const dictionary = {
   "materiales": {
     synonyms: ["recursos creativos", "materia prima artística", "sustentabilidad material", "insumos"],
     broader: ["arte", "experimentación", "prácticas creativas", "creación artística"],
-    narrower: ["materiales reciclados", "soportes mixtos", "técnicas mixtas", "pigmentos y colorantes", "textiles y fibras"
-              "metales", "papel", "cartón"]
+    narrower: ["soportes mixtos", "técnicas mixtas", "pigmentos y colorantes", "textiles y fibras", "metales", "papel", "cartón"]
+
   },
  "metodología": {
     synonyms: ["procedimiento", "sistema", "técnica"],
@@ -286,13 +286,13 @@ const dictionary = {
   "México": {
     synonyms: ["nación mexicana", "territorio mexicano"],
     broader: ["América Latina", "países de habla hispana"],
-    narrower: ["habitantes mexicanos", "arte mexicano", "cultura mexicana", "México prehispánico",
-      "identidad nacional", "contexto nacional", "estudios regionales"]
+    narrower: ["habitantes mexicanos", "arte mexicano", "cultura mexicana", "México prehispánico", 
+               "identidad nacional", "contexto nacional", "estudios regionales"]
   },
   "México prehispánico": {
     synonyms: ["México antiguo", "época precolombina"],
-    broader: ["civilización mesoamericana", "patrimonio arqueológico", "cosmovisión indígena", "raíces culturales"
-    narrower: ["iconografía mesoamericana", "arte precolombino", "referencias prehispánicas","simbología indígena" ] 
+    broader: ["civilización mesoamericana", "patrimonio arqueológico", "cosmovisión indígena", "raíces culturales"],
+    narrower: ["iconografía mesoamericana", "arte precolombino", "referencias prehispánicas","simbología indígena"] 
   },
 "moral": {
     synonyms: ["principios", "valores", "conducta"],
@@ -334,8 +334,7 @@ const dictionary = {
  "patrimonio": {
     synonyms: ["herencia", "legado", "bienes culturales"],
     broader: ["cultura", "historia"],
-    narrower: ["bienes heredados", "colecciones museísticas", "archivos históricos", "sitios arqueológicos", "tradiciones", "festividades"
-              "expresiones orales"]
+    narrower: ["bienes heredados", "colecciones museísticas", "archivos históricos", "sitios arqueológicos", "tradiciones", "festividades", "expresiones orales"]
   },
 "perspectiva de género": {
     synonyms: ["visión de equidad", "mirada inclusiva", "diversidad", "igualdad"],
@@ -446,11 +445,14 @@ const dictionary = {
     broader: ["tecnología", "ciberespacio", "internet", "TIC's"],
     narrower: ["documento en línea", "recurso electrónico", "nube", "ebook",
                "sitio web", "website", "streaming", "interactivo", "repositorio", "realidad aumentada", "VR", "multimedia"]
+ },
  "visual": {
     synonyms: ["pictórico", "gráfico", "imagen", "ilustración", "iconográfico"],
     broader: ["arte", "expresión gráfica", "óptica", "medios e imagen"],
-    narrower: ["grabado", "imagen en movimiento", "film", "ilustración", "fotografía", "infografía", "figura", "representación"]   
+    narrower: ["grabado", "imagen en movimiento", "film", "ilustración", "fotografía", "infografía", "figura", "representación"]  
+},
 };
+
 
 
 
