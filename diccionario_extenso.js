@@ -329,7 +329,7 @@ const dictionary = {
    "orquesta": {
     synonyms: ["ensamble", "agrupación musical"],
     broader: ["música", "arte sonoro", "formación de músicos"],
-    narrower: ["orquesta sinfónica", "orquesta juvenil", "expresiones sonoras colectivas," "ejecución instrumental colectiva"]
+    narrower: ["orquesta sinfónica", "orquesta juvenil", "expresiones sonoras colectivas", "ejecución instrumental colectiva"]
   },
  "patrimonio": {
     synonyms: ["herencia", "legado", "bienes culturales"],
@@ -452,6 +452,7 @@ const dictionary = {
     narrower: ["grabado", "imagen en movimiento", "film", "ilustración", "fotografía", "infografía", "figura", "representación"]  
 },
 };
+
 
 
 
