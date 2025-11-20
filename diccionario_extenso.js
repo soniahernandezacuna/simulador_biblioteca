@@ -193,7 +193,7 @@ const dictionary = {
     narrower: ["ética", "estética", "ontología"]
   },
   "género": {
-    synonyms: ["enfoque de género", "perspectiva de género"],
+    synonyms: ["equidad", "inclusividad", "diversidad"],
     broader: ["estudios de género", "identidad humana", "arte"],
     narrower: ["arte con perspectiva de género", "arte feminista latinoamericano", "representaciones queer",
       "visualidades no binarias", "representación corporal femenina"]
@@ -306,372 +306,148 @@ const dictionary = {
   },
  "música": {
     synonyms: ["melodía", "canción", "sonido", "composición musical"],
-    broader: ["arte", "industrias culturales"],
-    narrower: [
-      "música clásica",
-      "música contemporánea",
-      "música regional mexicana",
-      "composición experimental",
-      "etnomusicología mexicana",
-      "fusión sonora urbana"
-    ]
+    broader: ["arte sonoro", "expresiones artísticas", "industrias culturales", "cultura musical"],
+    narrower: ["música clásica", "música regional mexicana","mariachi contemporáneo",
+               "composición experimental","etnomusicología mexicana","fusión sonora urbana"]
   },
-
-
+ "musical": {
+    synonyms: ["cantos", "espectáculo ", "composición musical"],
+    broader: ["arte sonoro", "expresiones artísticas", "cultura musical"],
+    narrower: ["ópera", "opereta", "zarzuela", "teatro musical", "arreglos", "concierto teatralizado"]
+  },
+"narrativa": {
+    synonyms: ["prosa", "novela", "relato textual"],
+    broader: ["comunicación", "literatura", "formas de expresión", "producción literaria"],
+    narrower: ["texto", "novela", "cuento", "monografía", "microficción", "ficción", "documento"]
+  },
   
-  
-
-
-  
-  
-  
-  
-  
-  
-  
- 
-
- 
-
-
-  
- 
-
-
-  "orquesta": {
+"narrativa visual": {
+    synonyms: ["relato gráfico", "historia basada en imágenes"],
+    broader: ["comunicación gráfica", "arte visual"],
+    narrower: ["fotografía conceptual", "videoarte", "relato visual urbano", "cómic", "novela gráfica", "animación"]
+  },
+   "orquesta": {
     synonyms: ["ensamble", "agrupación musical"],
-    broader: ["música", "arte sonoro"],
-    narrower: ["orquesta sinfónica", "orquesta juvenil", "directores de orquesta"]
+    broader: ["música", "arte sonoro", "formación de músicos"],
+    narrower: ["orquesta sinfónica", "orquesta juvenil", "expresiones sonoras colectivas," "ejecución instrumental colectiva"]
   },
-
-  "teatro": {
-    synonyms: ["drama", "actuación", "representación escénica"],
-    broader: ["arte escénico"],
-    narrower: [
-      "teatro clásico",
-      "teatro moderno",
-      "teatro musical",
-      "teatro mexicano"
-    ]
-  },
-
-  "teatro clásico": {
-    synonyms: ["drama tradicional", "representación antigua"],
-    broader: ["teatro"],
-    narrower: ["adaptaciones clásicas", "relecturas contemporáneas"]
-  },
-
- 
-
-
-  "pintura": {
-    synonyms: ["arte pictórico", "obra visual", "óleo", "acuarela"],
-    broader: ["arte visual"],
-    narrower: [
-      "pintura moderna",
-      "pintura clásica",
-      "pintura muralista mexicana",
-      "iconografía prehispánica"
-    ]
-  },
-
-
-
-
-
-  
-
-
-
-  "México": {
-    synonyms: ["nación mexicana", "territorio azteca"],
-    broader: ["América Latina", "contexto nacional"],
-    narrower: [
-      "cultura mexicana",
-      "identidad nacional",
-      "México prehispánico",
-      "escenas culturales contemporáneas"
-    ]
-  },
-
-  "mexicana": {
-    synonyms: ["nacional", "tradicional"],
-    broader: ["México", "identidad cultural"],
-    narrower: ["arte mexicano", "música mexicana", "danza mexicana"]
-  },
-
-  "mexicano": {
-    synonyms: ["nacional", "azteca"],
-    broader: ["México", "cultura mexicana"],
-    narrower: [
-      "cine mexicano",
-      "músicos mexicanos",
-      "directores mexicanos",
-      "arte mexicano contemporáneo"
-    ]
-  },
-
-
-  "patrimonio": {
+ "patrimonio": {
     synonyms: ["herencia", "legado", "bienes culturales"],
-    broader: ["cultura"],
-    narrower: [
-      "patrimonio cultural mexicano",
-      "patrimonio inmaterial",
-      "patrimonio artístico"
-    ]
+    broader: ["cultura", "historia"],
+    narrower: ["bienes heredados", "colecciones museísticas", "archivos históricos", "sitios arqueológicos", "tradiciones", "festividades"
+              "expresiones orales"]
   },
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
+"perspectiva de género": {
+    synonyms: ["visión de equidad", "mirada inclusiva", "diversidad", "igualdad"],
+    broader: ["teoría crítica", "representación feminista", "políticas culturales"],
+    narrower: ["arte feminista","visualidades queer","crítica de género en el arte","representaciones no binarias",
+               "representación feminista"]
+  },
+  "pintura": {
+    synonyms: ["dibujo","arte pictórico", "obra visual"],
+    broader: ["arte visual", "color"],
+    narrower: ["óleo", "acuarela", "trazo", "imagen", "iconografía", "mural"]
+  },
+"plataformas": {
+    synonyms: ["ecosistemas digitales", "escenarios tecnológicos"],
+    broader: ["tecnología", "medios digitales", "canales de difusión", "arquitectura de medios"],
+    narrower: ["streaming","website", "app", "redes sociales","entornos multimedia"]
+  },
+  "realidad aumentada": {
+    synonyms: ["AR", "entorno interactivo"],
+    broader: ["tecnología digital", "tecnologías inmersivas"],
+    narrower: ["realidad aumentada en arte", "experiencias inmersivas", "tecnología interactiva"]
+  },
+ "reciclado": {
+    synonyms: ["reciclaje", "reciclamiento"],
+    broader: ["sostenibilidad", "gestión de residuos", "economía circular"],
+    narrower: ["materiales reutilizados", "diseños sustentables", "armazones ecológicos"]
+  },
 
   "redes sociales": {
     synonyms: ["plataformas sociales", "medios digitales"],
     broader: ["comunicación digital", "plataformas digitales"],
-    narrower: [
-      "difusión artística en plataformas",
-      "microcomunidades creativas",
-      "marketing cultural en línea"
-    ]
+    narrower: ["plataformas de contenido", "TikTok", "Facebook", "Instagram", "Discord", "Snap",
+      "foros en línea", "blogs", "community manager"]
   },
-
-  "plataformas digitales": {
-    synonyms: ["medios en línea", "servicios de streaming"],
-    broader: ["ecosistemas digitales", "tecnología"],
-    narrower: [
-      "plataformas de streaming nacionales",
-      "plataformas de redes sociales",
-      "entornos multimedia"
-    ]
+ "robótica": {
+    synonyms: ["robots", "automatización", "máquinas inteligentes"],
+    broader: ["tecnología", "ingeniería"],
+    narrower: ["escultura cinética", "dispositivos automatizados", "instalaciones multimedia",
+               "laboratorios de creatividad basados en tecnología"]
   },
-
- 
-
-  "tradición": {
-    synonyms: ["costumbre", "herencia", "ritual"],
-    broader: ["cultura"],
-    narrower: ["tradición oral", "tradición artística"]
+    "siglo xx": {
+    synonyms: ["siglo 20", "siglo veinte", "época moderna"],
+    broader: ["historia contemporánea", "historia del arte"],
+    narrower: ["arte del siglo xx", "arte moderno", "arte clásico", "vanguardia artística"]
   },
-
-  
- 
-
+  "siglo 20": {
+   synonyms: ["siglo veinte", "siglo XX", "época moderna"],
+    broader: ["historia contemporánea", "historia del arte"],
+    narrower: ["arte del siglo xx", "arte moderno", "arte clásico", "vanguardia artística"]
+  },
+ "siglo veinte": {
+   synonyms: ["siglo 20", "siglo XX", "época moderna"],
+    broader: ["historia contemporánea", "historia del arte"],
+    narrower: ["arte del siglo xx", "arte moderno", "arte clásico", "vanguardia artística"]
+  },
+  "siglo xxi": {
+    synonyms: ["siglo 21", "siglo veintiuno", "era digital"],
+    broader: ["historia reciente", "historia del arte", "transformación digital"],
+    narrower: ["sociedad digital", "globalización", "arte digital", "producción interdisciplinaria"]
+  },
+  "siglo 21": {
+    synonyms: ["siglo xxi", "siglo veintiuno", "era digital"],
+    broader: ["historia reciente", "historia del arte", "transformación digital"],
+    narrower: ["sociedad digital", "globalización", "arte digital", "producción interdisciplinaria"]
+  },
+  "siglo veintiuno": {
+    synonyms: ["siglo xxi", "siglo 21", "era digital"],
+    broader: ["historia reciente", "historia del arte", "transformación digital"],
+    narrower: ["sociedad digital", "globalización", "arte digital", "producción interdisciplinaria"]
+  },
   "sociedad": {
     synonyms: ["colectividad", "comunidad humana", "organización social"],
-    broader: [],
-    narrower: ["cultura", "educación", "política social", "economía cultural"]
+    broader: ["cultura", "civilización"],
+    narrower: ["grupo cultural", "colectivo religioso", "comunidad artística", "asociación civil"]
   },
-
-  "tecnología": {
-    synonyms: ["innovación técnica", "herramientas", "aplicaciones"],
-    broader: ["ciencias aplicadas", "innovación"],
-    narrower: [
-      "tecnología digital",
-      "tecnología educativa",
-      "tecnología de la información",
-      "tecnología especializada",
-      "arte y tecnología"
-    ]
-  },
-
-  "tecnología especializada": {
-    synonyms: ["herramientas técnicas", "equipamiento avanzado"],
-    broader: ["tecnología"],
-    narrower: ["instrumentación artística", "equipos de grabación", "hardware audiovisual"]
-  },
-
-  "tecnología digital": {
-    synonyms: ["tecnología electrónica", "plataformas tecnológicas"],
-    broader: ["tecnología", "sociedad digital"],
-    narrower: ["arte digital", "producción audiovisual digital", "narrativas visuales en línea"]
-  },
-
-  "plataformas digitales": {
-    synonyms: ["medios en línea", "servicios de streaming"],
-    broader: ["ecosistemas digitales", "tecnología"],
-    narrower: [
-      "plataformas de streaming nacionales",
-      "plataformas de redes sociales",
-      "entornos multimedia"
-    ]
-  },
-
-  "plataformas": {
-    synonyms: ["bases tecnológicas", "ecosistemas digitales"],
-    broader: ["tecnología", "difusión cultural"],
-    narrower: [
-      "plataformas OTT",
-      "plataformas sociales",
-      "plataformas culturales digitales"
-    ]
-  },
-
   "software": {
     synonyms: ["programa", "aplicación", "sistema"],
     broader: ["informática"],
     narrower: ["software educativo", "software de diseño", "software empresarial"]
   },
-
-
-
-  "robótica": {
-    synonyms: ["robots", "automatización", "máquinas inteligentes"],
-    broader: ["tecnología"],
-    narrower: [
-      "robótica industrial",
-      "robótica educativa",
-      "robótica de servicios"
-    ]
+  "teatro": {
+    synonyms: ["drama", "escenario", "puesta en escena", "evento"],
+    broader: ["artes escénicas", "producción teatral", "literatura dramática"],
+    narrower: ["escenografía", "vestuario", "coreografía", "musical", "obra", "representación"]
   },
-
-  
-
- 
-
- 
-  "tecnología educativa": {
-    synonyms: ["edtech", "enseñanza digital"],
-    broader: ["tecnología", "educación"],
-    narrower: ["plataformas educativas", "software educativo"]
+"tecnología": {
+    synonyms: ["técnicas", "sistemas", "desarrollos automatizados"],
+    broader: ["ciencia", "ingeniería", "innovación", "aplicaciones"],
+    narrower: ["software", "apps", "información digital", "arte digital", "creaciones 3D", "diseño digital"]
   },
-
-  "realidad aumentada": {
-    synonyms: ["AR", "realidad mixta", "entorno interactivo"],
-    broader: ["tecnología digital"],
-    narrower: ["realidad aumentada en arte", "aplicaciones interactivas"]
+"tradición": {
+    synonyms: ["costumbre", "herencia", "ritual", "legado"],
+    broader: ["cultura", "sociedad"],
+    narrower: ["rito", "gastronomía", "expresión", "artesanía"]
   },
-
-
-
-
-  
-
- 
-
-
-
- 
-
   "verdad": {
-    synonyms: ["realidad", "hecho", "certeza"],
-    broader: ["filosofía"],
-    narrower: ["verdad objetiva", "verdad subjetiva"]
+    synonyms: ["certeza", "afirmación", "confirmación", "aseveración"],
+    broader: ["moral", "ética", "filosofía"],
+    narrower: ["evidencia", "testimonio", "hechos", "representación"],
   },
-
   "vida": {
     synonyms: ["existencia", "ser", "vivir"],
-    broader: ["filosofía"],
-    narrower: ["vida personal", "vida social"]
+    broader: ["filosofía", "espiritualidad", "religión"],
+    narrower: ["ser humano", "persona", "aliento", "espíritu", "individuo"]
   },
 
- 
-  "teatro musical": {
-    synonyms: ["ambientaciones escénicas", "espacios teatrales"],
-    broader: ["teatro musical", "diseño escénico"],
-    narrower: ["escenografía inmersiva", "montajes híbridos"]
-  },
-
-
- 
-
-  "siglo xx": {
-    synonyms: ["siglo 20", "era moderna"],
-    broader: ["historia contemporánea"],
-    narrower: ["arte del siglo xx", "música moderna", "cine clásico"]
-  },
-
-  "siglo 20": {
-    synonyms: ["siglo veinte", "época moderna"],
-    broader: ["siglo xx"],
-    narrower: ["arte del siglo 20", "música sinfónica moderna"]
-  },
-
-  "siglo xxi": {
-    synonyms: ["siglo 21", "era actual"],
-    broader: ["historia reciente", "sociedad digital"],
-    narrower: ["arte digital", "innovación tecnológica", "plataformas culturales"]
-  },
-
-  "siglo 21": {
-    synonyms: ["siglo xxi", "era digital"],
-    broader: ["época contemporánea"],
-    narrower: ["arte posdigital", "sociedad interconectada"]
-  },
-
-  "narrativa visual": {
-    synonyms: ["relato gráfico", "historia visual"],
-    broader: ["comunicación", "arte visual"],
-    narrower: ["fotografía conceptual", "videoarte", "relato visual urbano"]
-  },
-
-  "experimentación": {
-    synonyms: ["ensayo", "prueba creativa"],
-    broader: ["arte contemporáneo", "creación", "investigación"],
-    narrower: [
-      "procesos creativos sostenibles",
-      "laboratorios artísticos",
-      "experimentación sonora",
-      "experimentación científica"
-    ]
-  },
-
-  "redes sociales": {
-    synonyms: ["plataformas sociales", "medios digitales"],
-    broader: ["comunicación digital", "plataformas digitales"],
-    narrower: [
-      "difusión artística en plataformas",
-      "microcomunidades creativas",
-      "marketing cultural en línea"
-    ]
-  },
-
- 
-
- 
-  "orquesta": {
-    synonyms: ["ensamble", "agrupación musical"],
-    broader: ["música", "arte sonoro"],
-    narrower: ["orquesta sinfónica", "orquesta juvenil", "directores de orquesta"]
-  },
-
-  "herencia musical": {
-    synonyms: ["legado sonoro", "tradición artística"],
-    broader: ["patrimonio cultural", "música"],
-    narrower: ["tradición sinfónica mexicana", "archivo histórico sonoro"]
-  },
-
-
-
-  "género": {
-    synonyms: ["identidad", "categoría"],
-    broader: ["estudios sociales", "identidad humana"],
-    narrower: [
-      "arte con perspectiva de género",
-      "representaciones queer",
-      "visualidades no binarias"
-    ]
-  },
-
-
-
-
-
-
+ "visual": {
+    synonyms: ["pictórico", "gráfico", "imagen", "ilustración", "iconográfico"],
+    broader: ["arte", "expresión gráfica", "óptica", "medios e imagen"],
+    narrower: ["grabado", "imagen en movimiento", "film", "ilustración", "fotografía", "infografía", "figura", "representación"]   
 };
+
 
 
 
