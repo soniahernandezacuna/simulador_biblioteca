@@ -261,9 +261,61 @@ const dictionary = {
     broader: ["américa", "hemisferio occidental", "países en desarrollo", "continente americano"],
     narrower: ["américa del sur", "centroamérica","américa central", "caribe"]
   },
-
-
-
+  "materiales": {
+    synonyms: ["recursos creativos", "materia prima artística", "sustentabilidad material", "insumos"],
+    broader: ["arte", "experimentación", "prácticas creativas", "creación artística"],
+    narrower: ["materiales reciclados", "soportes mixtos", "técnicas mixtas", "pigmentos y colorantes", "textiles y fibras"
+              "metales", "papel", "cartón"]
+  },
+ "metodología": {
+    synonyms: ["procedimiento", "sistema", "técnica"],
+    broader: ["investigación"],
+    narrower: ["metodología científica", "investigación documental", "métodos de innovación","estudios de caso",
+              "análisis de textos", "análisis iconográfico"]
+  },
+ "mexicana": {
+    synonyms: ["nacional", "habitante de México", "tradicional"],
+    broader: ["México", "habitante latinoamericano"],
+    narrower: ["arte mexicano", "cine mexicano", "música tradicional mexicana","arte popular mexicano","teatro nacional","danza regional mexicana"]
+  },
+  "mexicano": {
+    synonyms: ["nacional", "habitante de México", "tradicional"],
+    broader: ["México", "habitante latinoamericano"],
+    narrower: ["arte mexicano", "cine mexicano", "música tradicional mexicana","arte popular mexicano","teatro nacional","danza regional mexicana"]
+  },
+  "México": {
+    synonyms: ["nación mexicana", "territorio mexicano"],
+    broader: ["América Latina", "países de habla hispana"],
+    narrower: ["habitantes mexicanos", "arte mexicano", "cultura mexicana", "México prehispánico",
+      "identidad nacional", "contexto nacional", "estudios regionales"]
+  },
+  "México prehispánico": {
+    synonyms: ["México antiguo", "época precolombina"],
+    broader: ["civilización mesoamericana", "patrimonio arqueológico", "cosmovisión indígena", "raíces culturales"
+    narrower: ["iconografía mesoamericana", "arte precolombino", "referencias prehispánicas","simbología indígena" ] 
+  },
+"moral": {
+    synonyms: ["principios", "valores", "conducta"],
+    broader: ["ética"],
+    narrower: ["normas de conducta", "valores universales", "principios éticos", "deberes", "obligaciones", "virtudes humanas"]
+  },
+"museos": {
+    synonyms: ["salas de exposición", "galerías"],
+    broader: ["turismo", "instituciones culturales", "arte", centros de cultura"],
+    narrower: ["colecciones artísticas", "patrimonio colectivo", "exposiciones temporales", "conservación", "historia", "objetos de arte"]
+  },
+ "música": {
+    synonyms: ["melodía", "canción", "sonido", "composición musical"],
+    broader: ["arte", "industrias culturales"],
+    narrower: [
+      "música clásica",
+      "música contemporánea",
+      "música regional mexicana",
+      "composición experimental",
+      "etnomusicología mexicana",
+      "fusión sonora urbana"
+    ]
+  },
 
 
   
@@ -279,59 +331,10 @@ const dictionary = {
   
  
 
-  "música": {
-    synonyms: ["melodía", "canción", "sonido", "composición musical"],
-    broader: ["arte", "industrias culturales"],
-    narrower: [
-      "música clásica",
-      "música contemporánea",
-      "música regional mexicana",
-      "composición experimental",
-      "etnomusicología mexicana",
-      "fusión sonora urbana"
-    ]
-  },
+ 
 
 
   
-
-  "mexicana": {
-    synonyms: ["nacional", "tradicional"],
-    broader: ["México", "identidad cultural"],
-    narrower: ["música mexicana", "danza mexicana", "arte mexicano"]
-  },
-
-  "mexicano": {
-    synonyms: ["nacional", "azteca"],
-    broader: ["México", "cultura mexicana"],
-    narrower: ["arte mexicano", "cine mexicano", "músicos mexicanos"]
-  },
-
-  "México": {
-    synonyms: ["nación mexicana", "territorio azteca"],
-    broader: ["América Latina", "contexto nacional"],
-    narrower: [
-      "arte mexicano",
-      "cultura mexicana",
-      "México prehispánico",
-      "identidad nacional"
-    ]
-  },
-
-  "México prehispánico": {
-    synonyms: ["México antiguo", "época precolombina"],
-    broader: ["México", "historia del arte"],
-    narrower: ["iconografía mesoamericana", "arte precolombino"]
-  },
-
-
-
-  "improvisación": {
-    synonyms: ["espontaneidad", "creación libre"],
-    broader: ["danza", "música", "arte escénico"],
-    narrower: ["improvisación escénica", "improvisación musical"]
-  },
-
  
 
 
@@ -372,16 +375,8 @@ const dictionary = {
     ]
   },
 
- 
-  },
 
 
-
-  "materiales reciclados": {
-    synonyms: ["elementos reutilizados", "recursos sostenibles"],
-    broader: ["sustentabilidad", "arte ecológico"],
-    narrower: ["escultura ecológica", "instalaciones con desechos"]
-  },
 
 
   
@@ -426,6 +421,17 @@ const dictionary = {
       "patrimonio artístico"
     ]
   },
+
+ 
+
+
+
+
+
+
+
+
+
 
 
 
@@ -514,25 +520,6 @@ const dictionary = {
     ]
   },
 
-
-
-  "experimentación": {
-    synonyms: ["ensayo", "prueba creativa"],
-    broader: ["arte contemporáneo", "creación", "investigación"],
-    narrower: [
-      "procesos creativos sostenibles",
-      "laboratorios artísticos",
-      "experimentación sonora",
-      "experimentación científica"
-    ]
-  },
-
-
-
-
-
- 
-
   "software": {
     synonyms: ["programa", "aplicación", "sistema"],
     broader: ["informática"],
@@ -555,12 +542,7 @@ const dictionary = {
 
  
 
-  "metodología": {
-    synonyms: ["procedimiento", "sistema", "técnica"],
-    broader: ["investigación"],
-    narrower: ["metodología científica", "metodología de diseño", "metodología de innovación"]
-  },
-
+ 
   "tecnología educativa": {
     synonyms: ["edtech", "enseñanza digital"],
     broader: ["tecnología", "educación"],
@@ -576,11 +558,7 @@ const dictionary = {
 
 
 
-  "moral": {
-    synonyms: ["principios", "valores", "conducta"],
-    broader: ["ética"],
-    narrower: ["moral personal", "moral colectiva"]
-  },
+  
 
  
 
@@ -601,17 +579,12 @@ const dictionary = {
   },
 
  
-  "escenarios en teatro musical": {
+  "teatro musical": {
     synonyms: ["ambientaciones escénicas", "espacios teatrales"],
     broader: ["teatro musical", "diseño escénico"],
     narrower: ["escenografía inmersiva", "montajes híbridos"]
   },
 
-  "materiales reciclados": {
-    synonyms: ["elementos reutilizados", "recursos sostenibles"],
-    broader: ["sustentabilidad", "arte ecológico"],
-    narrower: ["escultura ecológica", "instalaciones con desechos"]
-  },
 
  
 
@@ -695,15 +668,11 @@ const dictionary = {
 
 
 
-  "materiales": {
-    synonyms: ["recursos creativos", "materia prima artística", "sustentabilidad material", "insumos"],
-    broader: ["arte", "experimentación", "prácticas creativas", "creación artística"],
-    narrower: ["materiales reciclados", "soportes mixtos", "técnicas mixtas", "pigmentos y colorantes", "textiles y fibras"
-              "metales", "papel", "cartón"]
-  },
+
 
 
 };
+
 
 
 
