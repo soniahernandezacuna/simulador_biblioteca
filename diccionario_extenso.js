@@ -92,13 +92,13 @@ const dictionary = {
     "cultural":  {
  synonyms: ["artístico", "patrimonial", "simbólico"],
  broader: ["cultura", "expresión social", "identidad colectiva", "diversidad artística", "idiosincracia"],
- narrower: ["artes visuales", "tradiciones comunitarias", "expresiones musicales", "prácticas lingüísticas", "gastronomía local"],
+ narrower: ["artes visuales", "tradiciones comunitarias", "expresiones musicales", "prácticas lingüísticas", "gastronomía local"]
 
   },
   "culturales":  {
  synonyms: ["educativos", "formativos", "pedagógicos", "didácticos"],
  broader: ["patrimonios culturales", "identidades colectivas", "diversidades artísticas", "políticas culturales"],
- narrower: ["proyectos comunitarios","difusión artística","actividades educativas","mediación cultural", "folclores", "tradicionales", "rituales"],
+ narrower: ["proyectos comunitarios","difusión artística","actividades educativas","mediación cultural", "folclores", "tradicionales", "rituales"]
   },
   "danza": {
     synonyms: ["baile", "coreografía"],
@@ -201,19 +201,66 @@ const dictionary = {
   "hardware": {
     synonyms: ["equipo", "dispositivo", "componentes físicos"],
     broader: ["informática", "tecnologías de información"],
-    narrower: [
-      "hardware de computadora", "hardware audiovisual",
+    narrower: ["hardware de computadora", "hardware audiovisual",
       "hardware de telecomunicaciones", "periféricos de computadora"]
   },
-
-
-
-
-
-
-
-
-
+ "herencia musical": {
+    synonyms: ["legado sonoro", "tradición musical"],
+    broader: ["patrimonio cultural", "música", "patrimonio sonoro", "legado artístico"],
+    narrower: ["tradición sinfónica mexicana","archivo histórico sonoro", "música folclórica", "legado musical mexicano","memoria orquestal nacional"]
+  },
+ "historia": {
+    synonyms: ["relato del pasado", "narrativa histórica", "memoria colectiva", "crónica"],
+    broader: ["ciencias sociales", "humanidades", "estudio del pasado", "conocimiento cultural"],
+    narrower: ["arqueología", "genealogía", "narrativa histórica", "memoria colectiva", "crónica", 
+               "fuentes documentales", "patrimonio cultural", "reconstrucción del pasado", "tradiciones orales"]
+  },
+  "identidad": {
+    synonyms: ["personalidad", "carácter", "autoconcepto"],
+    broader: ["psicología", "sociedad"],
+    narrower: ["identidad de género", "identidad cultural", "identidad nacional"]
+  },
+ "informática": {
+    synonyms: ["computación", "procesamiento de datos", "software"],
+    broader: ["tecnología"],
+    narrower: ["programación", "sistemas operativos", "redes informáticas",
+      "aplicaciones artísticas digitales"]
+  },
+  "innovación": {
+    synonyms: ["novedad", "mejora", "creación"],
+    broader: ["desarrollo", "tecnología"],
+    narrower: ["innovación": ["desarrollo tecnológico", "avances científicos", "mejora educativa", "transformación social",
+"prácticas artísticas emergentes", "cambio organizacional", "progreso empresarial", "creatividad aplicada"]
+  },
+  "inteligencia artificial": {
+    synonyms: ["IA", "aprendizaje automático", "machine learning"],
+    broader: ["tecnología"],
+    narrower: ["creatividad computacional", "ética algorítmica", "sistemas inteligentes aplicados", "música generativa computacional",
+               "modelos de procesamiento de lenguaje", "generación automática de texto", "sistemas de comprensión del lenguaje",
+               "aprendizaje profundo de lenguaje", "procesamiento lingüístico computacional"]
+  },
+  "investigación": {
+    synonyms: ["estudio", "análisis", "exploración"],
+    broader: ["ciencia"],
+    narrower: ["análisis académico", "estudio científico", "indagación", "revisión bibliográfica", "trabajo de campo",
+             "evaluación de resultados"]
+  },
+  "improvisación": {
+    synonyms: ["espontaneidad", "creación libre"],
+    broader: ["prácticas performativas", "procedimientos creativos"],
+    narrower: ["improvisación escénica","forma libre","danza improvisada","técnicas de expresión corporal",
+               "juegos teatrales", "exploración corporal"]
+  },
+ "laboratorio": {
+    synonyms: ["taller", "centro de investigación", "instituto"],
+    broader: ["investigación"],
+    narrower: ["espacio experimental", "laboratorio virtual", "laboratorio de innovación"]
+  },
+ "latinoamérica": {
+    synonyms: ["américa latina"],
+    broader: ["américa", "hemisferio occidental", "países en desarrollo", "continente americano"],
+    narrower: ["américa del sur", "centroamérica","américa central", "caribe"]
+  },
 
 
 
@@ -285,12 +332,7 @@ const dictionary = {
     narrower: ["improvisación escénica", "improvisación musical"]
   },
 
-  "herencia musical": {
-    synonyms: ["legado sonoro", "tradición artística"],
-    broader: ["patrimonio cultural", "música"],
-    narrower: ["tradición sinfónica mexicana", "archivo histórico sonoro"]
-  },
-
+ 
 
 
   "orquesta": {
@@ -385,19 +427,8 @@ const dictionary = {
     ]
   },
 
-  "herencia musical": {
-    synonyms: ["legado sonoro", "tradición artística"],
-    broader: ["música", "patrimonio cultural"],
-    narrower: ["tradición sinfónica mexicana", "archivo histórico sonoro"]
-  },
 
 
-
-  "identidad": {
-    synonyms: ["personalidad", "carácter", "autoconcepto"],
-    broader: ["psicología", "sociedad"],
-    narrower: ["identidad de género", "identidad cultural", "identidad nacional"]
-  },
 
 
  
@@ -483,16 +514,7 @@ const dictionary = {
     ]
   },
 
-  "innovación": {
-    synonyms: ["novedad", "mejora", "creación"],
-    broader: ["desarrollo", "tecnología"],
-    narrower: [
-      "innovación tecnológica",
-      "innovación social",
-      "innovación educativa",
-      "innovación artística"
-    ]
-  },
+
 
   "experimentación": {
     synonyms: ["ensayo", "prueba creativa"],
@@ -505,29 +527,11 @@ const dictionary = {
     ]
   },
 
-  "investigación": {
-    synonyms: ["estudio", "análisis", "exploración"],
-    broader: ["ciencia"],
-    narrower: [
-      "investigación científica",
-      "investigación aplicada",
-      "investigación educativa",
-      "investigación artística"
-    ]
-  },
 
 
 
-  "informática": {
-    synonyms: ["computación", "procesamiento de datos", "software"],
-    broader: ["tecnología"],
-    narrower: [
-      "programación",
-      "sistemas operativos",
-      "redes informáticas",
-      "aplicaciones artísticas digitales"
-    ]
-  },
+
+ 
 
   "software": {
     synonyms: ["programa", "aplicación", "sistema"],
@@ -536,17 +540,6 @@ const dictionary = {
   },
 
 
-
-  "inteligencia artificial": {
-    synonyms: ["IA", "aprendizaje automático", "machine learning"],
-    broader: ["tecnología"],
-    narrower: [
-      "IA creativa",
-      "IA ética",
-      "IA aplicada",
-      "música generativa con IA"
-    ]
-  },
 
   "robótica": {
     synonyms: ["robots", "automatización", "máquinas inteligentes"],
@@ -558,32 +551,14 @@ const dictionary = {
     ]
   },
 
-  "innovación abierta": {
-    synonyms: ["colaboración", "co-creación", "participación"],
-    broader: ["innovación"],
-    narrower: ["innovación tecnológica abierta", "innovación social abierta"]
-  },
-
   
 
-  "laboratorio": {
-    synonyms: ["taller", "centro de investigación", "instituto"],
-    broader: ["investigación"],
-    narrower: ["laboratorio físico", "laboratorio virtual", "laboratorio de innovación"]
-  },
+ 
 
   "metodología": {
     synonyms: ["procedimiento", "sistema", "técnica"],
     broader: ["investigación"],
     narrower: ["metodología científica", "metodología de diseño", "metodología de innovación"]
-  },
-
- 
-
-  "innovación tecnológica": {
-    synonyms: ["avance técnico", "progreso digital"],
-    broader: ["tecnología", "innovación"],
-    narrower: ["innovación abierta", "tecnología aplicada", "arte tecnológico"]
   },
 
   "tecnología educativa": {
@@ -721,20 +696,15 @@ const dictionary = {
 
 
   "materiales": {
-    synonyms: ["recursos creativos", "materia prima artística"],
-    broader: ["arte", "experimentación"],
-    narrower: ["materiales reciclados", "soportes mixtos"]
+    synonyms: ["recursos creativos", "materia prima artística", "sustentabilidad material", "insumos"],
+    broader: ["arte", "experimentación", "prácticas creativas", "creación artística"],
+    narrower: ["materiales reciclados", "soportes mixtos", "técnicas mixtas", "pigmentos y colorantes", "textiles y fibras"
+              "metales", "papel", "cartón"]
   },
 
- 
-
-  "innovación artística": {
-    synonyms: ["creación avanzada", "vanguardia creativa"],
-    broader: ["innovación", "arte contemporáneo"],
-    narrower: ["arte tecnológico", "arte generativo", "arte experimental"]
-  }
 
 };
+
 
 
 
